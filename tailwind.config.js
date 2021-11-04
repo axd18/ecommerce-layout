@@ -13,7 +13,9 @@ module.exports = {
             padding: '1rem'
         },
         colors: {
-            'primary': '#3483fa'
+            'primary': '#FD3D57',
+            'secundary': '#2B2D42',
+            'white' : 'white'
         },
         extend: {},
     },
