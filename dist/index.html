@@ -55,28 +55,30 @@
     <navbar class="flex bg-secundary">
         <div class="container flex">
             <!--All category-->
-            <div class="px-8 py-4 flex items-center cursor-pointer relative bg-primary">
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
                 <span class="text-white">
                     <i class="fas fa-bars"></i>
                 </span>
                 <span class="capitalize ml-2 text-white">Todas las categorias</span>
-                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3">
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                    <!--Single category-->
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
                         <img src="" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Sofa</span>
                     </a>
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
                         <img src="" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
                     </a>
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
                         <img src="" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Office</span>
                     </a>
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
                         <img src="" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
                     </a>
+                    <!--Single category end-->
                 </div>
             </div>
             <!--All category end-->

@@ -15,12 +15,17 @@ module.exports = {
         colors: {
             'primary': '#FD3D57',
             'secundary': '#2B2D42',
-            'white' : 'white'
+            'white' : 'white',
+            'light' : '#F3F4F6',
+            'gray-300' : '#D1D5DB'
         },
         extend: {},
     },
     variants: {
-        extend: {},
+        extend: {
+            display: ['group-hover'],
+            visibility: ['group-hover']
+        },
     },
     plugins: [],
 }
