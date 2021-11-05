@@ -17,14 +17,15 @@ module.exports = {
             'secundary': '#2B2D42',
             'white' : 'white',
             'light' : '#F3F4F6',
-            'gray-300' : '#D1D5DB'
+            'gray-300' : '#D1D5DB',
+            'transparent': 'transparent'
         },
         extend: {},
     },
     variants: {
         extend: {
             display: ['group-hover'],
-            visibility: ['group-hover']
+            visibility: ['group-hover'],
         },
     },
     plugins: [],
