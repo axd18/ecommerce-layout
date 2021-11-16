@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    .size-selector input:checked + lavel {
+    .size-selector input:checked + label {
         @apply bg-primary text-white;
     }
 }
