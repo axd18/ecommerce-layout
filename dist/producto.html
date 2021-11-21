@@ -112,7 +112,7 @@
     <div class="container grid grid-cols-2 gap-6">
         <!--product image-->
         <div>
-            <img href="#" class="w-full bg-gray-300 h-80"/>
+            <img href="#" class="w-full bg-gray-300 h-96"/>
             <div class="grid grid-cols-5 gap-4 mt-4 mb-4">
                 <img href="#" class="w-full cursor-pointer bg-gray-300 border border-primary h-20"/>
                 <img href="#" class="w-full cursor-pointer bg-gray-300 h-20"/>
@@ -160,6 +160,57 @@
             <p class="mt-4 text-secundary">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia laborum quis officiis necessitatibus hic eos modi quaerat in ipsa impedit beatae laboriosam alias sit voluptate nostrum quam suscipit, voluptas pariatur.
             </p>
+            <!--size filter-->
+            <div class="pt-4">
+                <h3 class="text-sm text-secundary mb-1 uppercase">Medida</h3>
+                <div class="flex items-center gap-2">
+                    <!--single size-->
+                    <div class="size-selector">
+                        <input type="radio" name="size" class="hidden" id="size-xs">
+                        <label for="size-xs" class="text-xs border border-secundary rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-secundary">XS</label>
+                    </div>
+                    <div class="size-selector">
+                        <input type="radio" name="size" class="hidden" id="size-s">
+                        <label for="size-s" class="text-xs border border-secundary rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-secundary">S</label>
+                    </div>
+                    <div class="size-selector">
+                        <input type="radio" name="size" class="hidden" id="size-m">
+                        <label for="size-m" class="text-xs border border-secundary rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-secundary">M</label>
+                    </div>
+                    <div class="size-selector">
+                        <input type="radio" name="size" class="hidden" id="size-l">
+                        <label for="size-l" class="text-xs border border-secundary rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-secundary">L</label>
+                    </div>
+                    <div class="size-selector">
+                        <input type="radio" name="size" class="hidden" id="size-xl">
+                        <label for="size-xl" class="text-xs border border-secundary rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-secundary">XL</label>
+                    </div>
+                    <!--single size end-->
+                </div>
+            </div>
+            <!--size filter end-->
+
+            <!--color filter-->
+            <div class="pt-4">
+                <h3 class="text-sm text-secundary mb-1 uppercase">color</h3>
+                <div class="flex items-center gap-2">
+                    <!--single color-->
+                    <div class="color-selector">
+                        <input type="radio" name="color" class="hidden" id="color-red">
+                        <label for="color-red" class="border border-secundary rounded-sm h-5 w-5 cursor-pointer shadow-sm block" style="background-color: #fc3d57;"></label>
+                    </div>
+                    <div class="color-selector">
+                        <input type="radio" name="color" class="hidden" id="color-white">
+                        <label for="color-white" class="border border-secundary rounded-sm h-5 w-5 cursor-pointer shadow-sm block" style="background-color: white;"></label>
+                    </div>
+                    <div class="color-selector">
+                        <input type="radio" name="color" class="hidden" id="color-black">
+                        <label for="color-black" class="border border-secundary rounded-sm h-5 w-5 cursor-pointer shadow-sm block" style="background-color: black;"></label>
+                    </div>
+                    <!--single color end-->
+                </div>
+            </div>
+            <!--color filter end-->
         </div>
         <!--product content end-->
     </div>
