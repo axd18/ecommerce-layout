@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    <!--Header-->
+    <header class="py-4 shadow-sm ">
+        <div class="container flex items-center justify-between">
+            <!--Logo-->
+             <a href="#">
+                <h1>Logo</h1>
+             </a>   
+            <!--Searchbar-->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-200">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-md focus:outline-none" placeholder="Buscar">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Buscar</button>
+            </div> 
+            <!--Icons-->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="txt-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Lista</div>
+                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="txt-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">Carrito</div>
+                    <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="txt-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cuenta</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--Header end-->
+    
+    <!--Navbar-->
+    <navbar class="flex bg-secundary">
+        <div class="container flex">
+            <!--All category-->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">Todas las categorias</span>
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                    <!--Single category-->
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                        <img src="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                        <img src="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                        <img src="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                        <img src="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+                    </a>
+                    <!--Single category end-->
+                </div>
+            </div>
+            <!--All category end-->
+            <!--Navbar links-->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="index.html" class="text-white hover:text-white transition">Home</a>
+                    <a href="tienda.html" class="text-white hover:text-white transition">Tienda</a>
+                    <a href="#" class="text-white hover:text-white transition">Nostros</a>
+                    <a href="#" class="text-white hover:text-white transition">Contacto</a>
+                </div>
+                <a href="#" class="text-white hover:text-white transition">00 123456</a>
+            </div>
+            <!--Navbar links end-->
+        </div>
+    </navbar>
+    <!--Navbar end-->
+    
+    <!--breadcrums-->
+    <div class="container py-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-secundary font-medium">Mi cuenta</p>
+    </div>
+    <!--breadcrums end-->
+
+    <!--account wrapper-->
+    <div class="container grid-cols-12 items-start gap-6 pt-4 pb-16">
+        
+    </div>
+    <!--account wrapper end-->
+
+    <!--Footer-->
+    <footer class="bg-white pt-16 pb-12 border-t border-secundary">
+        <div class="container grid grid-cols-3">
+            <!--Footer text-->
+            <div class="col-span-1 space-y-8">
+                <img src="#" class="w-30">
+                <p class="text-secundary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui explicabo a, et magni itaque molestiae odio facere cumque nesciunt quia totam maxime nemo fuga nobis.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="" class="text-secundary hover:text-primary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-secundary hover:text-primary">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <!--Footer text end-->
+
+            <!--Footer links-->
+            <div class="flex col-span-2-grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-secundary uppercase tracking-wider uppercase">Soluciones</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-secundary hover:text-primary block">Marketing</a>
+                            <a href="#" class="text-base text-secundary hover:text-primary block">Analítica</a>
+                            <a href="#" class="text-base text-secundary hover:text-primary block">Comercios</a>
+                            <a href="#" class="text-base text-secundary hover:text-primary block">Nostros</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-secundary uppercase tracking-wider">Soporte</h3>
+                    <div class="mt-4 space-y-4">
+                        <a href="#" class="text-base text-secundary hover:text-primary block">Marketing</a>
+                        <a href="#" class="text-base text-secundary hover:text-primary block">Analítica</a>
+                        <a href="#" class="text-base text-secundary hover:text-primary block">Comercios</a>
+                        <a href="#" class="text-base text-secundary hover:text-primary block">Nostros</a>
+                    </div>
+                </div>
+            </div>
+            <!--Footer links end-->
+        </div>
+    </footer>
+    <!--Footer end-->
+
+    <!--Copyright-->
+    <div class="bg-secundary py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white">Todos los derechos reservados.</p>
+            <img src="#" class="h-5">
+        </div>
+    </div>
+    <!--Copyright end-->
+</body>
