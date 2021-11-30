@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,31 @@
     <title>Tailwind</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../src/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
 </head>
+
 <body>
     <!--Header-->
     <header class="py-4 shadow-sm ">
         <div class="container flex items-center justify-between">
             <!--Logo-->
-             <a href="#">
+            <a href="#">
                 <h1>Logo</h1>
-             </a>   
+            </a>
             <!--Searchbar-->
             <div class="w-full max-w-xl relative flex">
                 <span class="absolute left-4 top-3 text-lg text-gray-200">
                     <i class="fas fa-search"></i>
                 </span>
-                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-md focus:outline-none" placeholder="Buscar">
-                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Buscar</button>
-            </div> 
+                <input type="text"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-md focus:outline-none"
+                    placeholder="Buscar">
+                <button
+                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Buscar</button>
+            </div>
             <!--Icons-->
             <div class="flex items-center space-x-4">
                 <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
@@ -33,16 +40,18 @@
                         <i class="far fa-heart"></i>
                     </div>
                     <div class="text-xs leading-3">Lista</div>
-                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                    <span
+                        class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
                 </a>
                 <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="txt-2xl">
                         <i class="fas fa-shopping-bag"></i>
                     </div>
                     <div class="text-xs leading-3">Carrito</div>
-                    <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                    <span
+                        class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
                 </a>
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                <a href="login.html" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="txt-2xl">
                         <i class="far fa-user"></i>
                     </div>
@@ -52,7 +61,7 @@
         </div>
     </header>
     <!--Header end-->
-    
+
     <!--Navbar-->
     <navbar class="flex bg-secundary">
         <div class="container flex">
@@ -62,7 +71,8 @@
                     <i class="fas fa-bars"></i>
                 </span>
                 <span class="capitalize ml-2 text-white">Todas las categorias</span>
-                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
                     <!--Single category-->
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
                         <img src="" class="w-5 h-5 object-contain">
@@ -98,7 +108,7 @@
         </div>
     </navbar>
     <!--Navbar end-->
-    
+
     <!--breadcrums-->
     <div class="container py-4 flex items-center gap-3">
         <a href="index.html" class="text-primary text-base">
@@ -113,40 +123,46 @@
 
     <!--account wrapper-->
     <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
-       <!--sidebar-->
-       <div class="col-span-3">
-           <!--account prfile-->
-           <div class="px-4 py-3 shadow flex items-center gap-4">
-               <div class="flex-shrink-0">
-                   <img src="#" class="rounded-full w-14 h-14 object-cover">
-               </div>
-               <div class="flex-grow">
-                   <p class="text-secundary">Hola,</p>
-                   <h4 class="text-secundary font-medium">Adrián Fernández</h4>
-               </div>
-           </div>
-           <!--account prfile end-->
-           <!--profile links-->
-           <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-300 space-y-4 text-secundary">
-               <!--single link-->
-               <div class="space-y-1 pl-8">
-                   <a href="#" class="relative text-primary block font-medium capitalize">
-                       <span class="absolute -left-8 top-0 text-base">
-                        <i class="far fa-address-card"></i>
-                       </span>
-                       Configuración
-                   </a>
-               </div>
-               <!--single link end-->
-           </div>
-           <!--profile links end-->
-       </div>
-       <!--sidebar end-->
-       <!--profile info-->
-       <div class="col-span-9">
+        <!--sidebar-->
+        <div class="col-span-3">
+            <!--account prfile-->
+            <div class="px-4 py-3 shadow flex items-center gap-4">
+                <div class="flex-shrink-0">
+                    <img src="#" class="rounded-full w-14 h-14 object-cover">
+                </div>
+                <div class="flex-grow">
+                    <p class="text-secundary">Hola,</p>
+                    <h4 class="text-secundary font-medium">Adrián Fernández</h4>
+                </div>
+            </div>
+            <!--account prfile end-->
+            <!--profile links-->
+            <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-300 space-y-4 text-secundary">
+                <!--single link-->
+                <div class="space-y-1 pl-8">
+                    <a href="#" class="relative text-primary block font-medium capitalize">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="far fa-address-card"></i>
+                        </span>
+                        Configuración
+                    </a>
+                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
+                        Mis pedidos
+                    </a>
+                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
+                        Dirección
+                    </a>
+                </div>
+                <!--single link end-->
+            </div>
+            <!--profile links end-->
+        </div>
+        <!--sidebar end-->
+        <!--profile info-->
+        <div class="col-span-9">
 
-       </div>
-       <!--profile info end-->
+        </div>
+        <!--profile info end-->
     </div>
     <!--account wrapper end-->
 
@@ -157,7 +173,8 @@
             <div class="col-span-1 space-y-8">
                 <img src="#" class="w-30">
                 <p class="text-secundary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui explicabo a, et magni itaque molestiae odio facere cumque nesciunt quia totam maxime nemo fuga nobis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui explicabo a, et magni itaque
+                    molestiae odio facere cumque nesciunt quia totam maxime nemo fuga nobis.
                 </p>
                 <div class="flex space-x-6">
                     <a href="" class="text-secundary hover:text-primary">
@@ -174,7 +191,8 @@
             <div class="flex col-span-2-grid grid-cols-2 gap-8">
                 <div class="grid grid-cols-2 gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold text-secundary uppercase tracking-wider uppercase">Soluciones</h3>
+                        <h3 class="text-sm font-semibold text-secundary uppercase tracking-wider uppercase">Soluciones
+                        </h3>
                         <div class="mt-4 space-y-4">
                             <a href="#" class="text-base text-secundary hover:text-primary block">Marketing</a>
                             <a href="#" class="text-base text-secundary hover:text-primary block">Analítica</a>
