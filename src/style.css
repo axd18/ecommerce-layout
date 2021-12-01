@@ -9,4 +9,7 @@
     .color-selector input:checked + label {
         @apply ring-2 ring-primary;
     }
+    .input-box {
+        @apply ;
+    }
 }
