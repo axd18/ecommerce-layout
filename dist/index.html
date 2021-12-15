@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    </head>
+    <body>
+    <!--Toggle menu-->
+    <div class="absolute z-50 shadow-lg w-72 right-0 bg-secundary shadow-md z-10">
+        <div class="flex justify-end p-4 text-white">
+            <i class="fas fa-times fa-2x"></i>
+        </div>
+        <h3 class="block px-4 py-2 text-lg leading-5 text-white font-medium">Categorías</h3>
+        <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Buzos</a>
+        <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Remeras</a>
+        <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Jeans</a>
+        <div class="border-t border-gray-300"></div>
+        <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Buzos</a>
+        <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Remeras</a>
+        <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Jeans</a>
+    </div>
+    <!--Toggle menu end-->
+
     <!--Header-->
     <header class="py-4 shadow-sm ">
         <div class="container md:flex items-center justify-between block">
@@ -59,6 +75,7 @@
         </div>
     </header>
     <!--Header end-->
+    
     
     <!--Navbar-->
     <navbar class="md:flex bg-secundary hidden">
