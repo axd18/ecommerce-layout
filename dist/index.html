@@ -159,7 +159,7 @@
     <!--Categories-->
     <div class="container py-16">
         <h2 class="text-3xl font-medium text-secundary uppercase mb-6">Categorías</h2>
-        <div class="grid grid-cols-3 gap-3">
+        <div class="grid md:grid-cols-3 gap-3 grid-cols-1">
             <!--Single category-->
             <div class="relative rounded-sm overflow-hidden">
                 <img src="https://i.picsum.photos/id/1001/5616/3744.jpg?hmac=38lkvX7tHXmlNbI0HzZbtkJ6_wpWyqvkX4Ty6vYElZE" class="w-full">
@@ -186,7 +186,7 @@
     <div class="container pb-16">
         <h2 class="text-2xl font-medium text-secundary uppercase-mb-6">Novedades</h2>
         <!--Product grid-->
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid md:grid-cols-4 gap-6 grid-cols-2">
             <!--Single product-->
             <div class="bg-white shadow rounded overflow-hidden">
               <!--Product image-->
@@ -227,6 +227,46 @@
                 <!--Product content end-->
             </div>  
             <!--Single product end-->
+            <!--Single product-->
+            <div class="bg-white shadow rounded overflow-hidden">
+                <!--Product image-->
+                <div class="relative">
+                    <img src="https://i.picsum.photos/id/1001/5616/3744.jpg?hmac=38lkvX7tHXmlNbI0HzZbtkJ6_wpWyqvkX4Ty6vYElZE" class="w-full">
+                    <div class="absolute inset-0 bg-secundary flex items-center justify-center gap-2">
+                      <a href="" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                          <i class="fas fa-search"></i>
+                      </a>
+                      <a href="" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                          <i class="fas fa-heart"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!--Product image end--> 
+                  
+                  <!--Product content-->
+                  <div class="pt-4 pb-3 px-4">
+                      <a href="#">
+                          <h4 class="uppercase font-medium text-xl mb-2 text-secundary hover:text-primary transition">Remera</h4>
+                      </a>
+                      <div class="flex items-baseline mb-1 space-x-2">
+                          <p class="text-xl text-primary font-semibold">$3.500</p>
+                          <p class="text-sm text-secundary line-through">$3.700</p>
+                      </div>
+                      <div class="felx items-center">
+                          <div class="flex gap-1 text-sm text-primary">
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                          </div>
+                          <div class="text-xs text-secundary ml-3">(150)</div>
+                      </div>
+                  </div>
+                  <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Comprar</a>
+                  <!--Product content end-->
+              </div>  
+              <!--Single product end-->
         </div>
         <!--Product grid end-->
     </div>
@@ -245,7 +285,7 @@
     <div class="container pb-16">
         <h2 class="text-2xl font-medium text-secundary uppercase-mb-6">Recomendados para vos</h2>
         <!--Product grid-->
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid md:grid-cols-4 gap-6 grid-cols-2">
             <!--Single product-->
             <div class="bg-white shadow rounded overflow-hidden">
               <!--Product image-->
@@ -294,7 +334,7 @@
 
     <!--Footer-->
     <footer class="bg-white pt-16 pb-12 border-t border-secundary">
-        <div class="container grid grid-cols-3">
+        <div class="container grid md:grid-cols-3 grid-cols-1">
             <!--Footer text-->
             <div class="col-span-1 space-y-8">
                 <img src="#" class="w-30">
