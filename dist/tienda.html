@@ -11,93 +11,140 @@
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
 </head>
 <body>
-    <!--Header-->
-    <header class="py-4 shadow-sm ">
-        <div class="container flex items-center justify-between">
-            <!--Logo-->
-             <a href="#">
-                <h1>Logo</h1>
-             </a>   
-            <!--Searchbar-->
-            <div class="w-full max-w-xl relative flex">
-                <span class="absolute left-4 top-3 text-lg text-gray-200">
-                    <i class="fas fa-search"></i>
-                </span>
-                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-md focus:outline-none" placeholder="Buscar">
-                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Buscar</button>
-            </div> 
-            <!--Icons-->
-            <div class="flex items-center space-x-4">
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
-                    <div class="txt-2xl">
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="text-xs leading-3">Lista</div>
-                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
-                </a>
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
-                    <div class="txt-2xl">
-                        <i class="fas fa-shopping-bag"></i>
-                    </div>
-                    <div class="text-xs leading-3">Carrito</div>
-                    <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
-                </a>
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
-                    <div class="txt-2xl">
-                        <i class="far fa-user"></i>
-                    </div>
-                    <div class="text-xs leading-3">Cuenta</div>
-                </a>
+        <!--Toggle menu-->
+        <div id="dropdown_content" class="absolute z-50 shadow-lg w-72 right-0 bg-secundary shadow-md z-10 hidden">
+            <div id="close" class="flex justify-end p-4 text-white">
+                <i class="fas fa-times fa-2x"></i>
             </div>
+            <h3 class="block px-4 py-2 text-lg leading-5 text-white font-medium">Categorías</h3>
+            <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Buzos</a>
+            <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Remeras</a>
+            <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Jeans</a>
+            <div class="border-t border-gray-300 w-30"></div>
+            <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Buzos</a>
+            <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Remeras</a>
+            <a href="#" class="block px-4 py-2 text-md leading-5 text-white">Jeans</a>
+            <div class="border-t border-gray-300 w-30"></div>
+            <a href="#" class="flex px-4 py-2 text-md leading-5 text-white items-center">
+                <div class="txt-2xl pr-2">
+                    <i class="far fa-heart fa-lg"></i>
+                </div>
+                <div class="text-md leading-3">Lista</div>
+                <!-- <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> -->
+            </a>
+            <a href="#" class="flex px-4 py-2 text-md leading-5 text-white items-center">
+                <div class="txt-2xl pr-2">
+                    <i class="far fa-shopping-bag fa-lg"></i>
+                </div>
+                <div class="text-md leading-3">Carrito</div>
+                <!-- <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> -->
+            </a>
+            <a href="#" class="flex px-4 py-2 text-md leading-5 text-white items-center">
+                <div class="txt-2xl pr-2">
+                    <i class="far fa-user fa-lg"></i>
+                </div>
+                <div class="text-md leading-3">Usuario</div>
+                <!-- <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> -->
+            </a>
         </div>
-    </header>
-    <!--Header end-->
+        <!--Toggle menu end-->
     
-    <!--Navbar-->
-    <navbar class="flex bg-secundary">
-        <div class="container flex">
-            <!--All category-->
-            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
-                <span class="text-white">
-                    <i class="fas fa-bars"></i>
-                </span>
-                <span class="capitalize ml-2 text-white">Todas las categorias</span>
-                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-                    <!--Single category-->
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
-                        <img src="" class="w-5 h-5 object-contain">
-                        <span class="ml-6 text-gray-600 text-sm">Sofa</span>
-                    </a>
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
-                        <img src="" class="w-5 h-5 object-contain">
-                        <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
-                    </a>
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
-                        <img src="" class="w-5 h-5 object-contain">
-                        <span class="ml-6 text-gray-600 text-sm">Office</span>
-                    </a>
-                    <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
-                        <img src="" class="w-5 h-5 object-contain">
-                        <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
-                    </a>
-                    <!--Single category end-->
+        <!--Header-->
+        <header class="py-4 shadow-sm ">
+            <div class="container md:flex items-center justify-between block">
+                <div class="flex justify-between pb-3">
+                    <!--Logo-->
+                 <a href="#">
+                    <h1>Logo</h1>
+                 </a>   
+                 <!--hamburger-->
+                 <div id="dropdown" class="md:hidden flex">
+                     <i class="fas fa-bars fa-2x"></i>
+                 </div>
+                 <!--hamburger end-->
                 </div>
-            </div>
-            <!--All category end-->
-            <!--Navbar links-->
-            <div class="flex items-center justify-between flex-grow pl-12">
-                <div class="flex items-center space-x-6 capitalize">
-                    <a href="index.html" class="text-white hover:text-white transition">Home</a>
-                    <a href="tienda.html" class="text-white hover:text-white transition">Tienda</a>
-                    <a href="#" class="text-white hover:text-white transition">Nostros</a>
-                    <a href="#" class="text-white hover:text-white transition">Contacto</a>
+                <!--Searchbar-->
+                <div class="w-full max-w-xl relative flex">
+                    <span class="absolute left-4 top-3 text-lg text-gray-200">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-md focus:outline-none" placeholder="Buscar">
+                    <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Buscar</button>
+                </div> 
+                <!--Icons-->
+                <div class="md:flex items-center space-x-4 hidden">
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                        <div class="txt-2xl">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="text-xs leading-3">Lista</div>
+                        <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                    </a>
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                        <div class="txt-2xl">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="text-xs leading-3">Carrito</div>
+                        <span class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                    </a>
+                    <a href="login.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                        <div class="txt-2xl">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="text-xs leading-3">Cuenta</div>
+                    </a>
                 </div>
-                <a href="#" class="text-white hover:text-white transition">00 123456</a>
+                <!--Icons end-->
             </div>
-            <!--Navbar links end-->
-        </div>
-    </navbar>
-    <!--Navbar end-->
+        </header>
+        <!--Header end-->
+        
+        
+        <!--Navbar-->
+        <navbar class="md:flex bg-secundary hidden">
+            <div class="container flex">
+                <!--All category-->
+                <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                    <span class="text-white">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <span class="capitalize ml-2 text-white">Todas las categorias</span>
+                    <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                        <!--Single category-->
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                            <img src="" class="w-5 h-5 object-contain">
+                            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                            <img src="" class="w-5 h-5 object-contain">
+                            <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                            <img src="" class="w-5 h-5 object-contain">
+                            <span class="ml-6 text-gray-600 text-sm">Office</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-light transition">
+                            <img src="" class="w-5 h-5 object-contain">
+                            <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+                        </a>
+                        <!--Single category end-->
+                    </div>
+                </div>
+                <!--All category end-->
+                <!--Navbar links-->
+                <div class="flex items-center justify-between flex-grow pl-12">
+                    <div class="flex items-center space-x-6 capitalize">
+                        <a href="index.html" class="text-white hover:text-white transition">Home</a>
+                        <a href="tienda.html" class="text-white hover:text-white transition">Tienda</a>
+                        <a href="#" class="text-white hover:text-white transition">Nostros</a>
+                        <a href="#" class="text-white hover:text-white transition">Contacto</a>
+                    </div>
+                    <a href="#" class="text-white hover:text-white transition">00 123456</a>
+                </div>
+                <!--Navbar links end-->
+            </div>
+        </navbar>
+        <!--Navbar end-->
     
     <!--breadcrums-->
     <div class="container py-4 flex items-center gap-3">
@@ -112,9 +159,9 @@
     <!--breadcrums end-->
 
     <!--Shop wrapper-->
-    <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+    <div class="container grid md:grid-cols-4 gap-6 pt-4 pb-16 items-start grid-cols-2">
         <!--sidebar-->
-        <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+        <div class="md:col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden hidden">
             <div class="divide-y divide-gray-300 space-y-5">
                 <!--category filter-->
                 <div>
@@ -439,3 +486,13 @@
             </div>
         </div>
         <!--Copyright end-->
+        
+        <script>
+            document.getElementById('dropdown').addEventListener('click', function(){
+                document.getElementById('dropdown_content').classList.toggle('hidden')
+            });
+            document.getElementById('close').addEventListener('click', function(){
+                document.getElementById('dropdown_content').classList.toggle('hidden')
+            })
+        </script>
+</body>
