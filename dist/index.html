@@ -11,8 +11,8 @@
     </head>
     <body>
     <!--Toggle menu-->
-    <div class="absolute z-50 shadow-lg w-72 right-0 bg-secundary shadow-md z-10">
-        <div class="flex justify-end p-4 text-white">
+    <div id="dropdown_content" class="absolute z-50 shadow-lg w-72 right-0 bg-secundary shadow-md z-10 hidden">
+        <div id="close" class="flex justify-end p-4 text-white">
             <i class="fas fa-times fa-2x"></i>
         </div>
         <h3 class="block px-4 py-2 text-lg leading-5 text-white font-medium">Categorías</h3>
@@ -38,6 +38,13 @@
             <div class="text-md leading-3">Carrito</div>
             <!-- <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> -->
         </a>
+        <a href="#" class="flex px-4 py-2 text-md leading-5 text-white items-center">
+            <div class="txt-2xl pr-2">
+                <i class="far fa-user fa-lg"></i>
+            </div>
+            <div class="text-md leading-3">Usuario</div>
+            <!-- <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> -->
+        </a>
     </div>
     <!--Toggle menu end-->
 
@@ -50,7 +57,7 @@
                 <h1>Logo</h1>
              </a>   
              <!--hamburger-->
-             <div class="md:hidden flex">
+             <div id="dropdown" class="md:hidden flex">
                  <i class="fas fa-bars fa-2x"></i>
              </div>
              <!--hamburger end-->
@@ -421,5 +428,13 @@
     </div>
     <!--Copyright end-->
     
+    <script>
+        document.getElementById('dropdown').addEventListener('click', function(){
+            document.getElementById('dropdown_content').classList.toggle('hidden')
+        });
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('dropdown_content').classList.toggle('hidden')
+        })
+    </script>
 </body>
 </html>
