@@ -159,9 +159,9 @@
     <!--breadcrums end-->
 
     <!--Shop wrapper-->
-    <div class="container grid md:grid-cols-4 gap-6 pt-4 pb-16 items-start grid-cols-2">
+    <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
         <!--sidebar-->
-        <div class="md:col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden hidden">
+        <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
             <div class="divide-y divide-gray-300 space-y-5">
                 <!--category filter-->
                 <div>
@@ -282,7 +282,7 @@
         <!--sidebar end-->
         
         <!--products-->
-        <div class="col-span-3">
+        <div class="md:col-span-3 col-span-4">
             <!--sorting-->
             <div class="flex items-center mb-4">
                 <select class="w-44 text-sm text-secundary px-4 py-3 border-secundary shadow-sm rounded focus:ring-primary focus:border-primary">
@@ -292,6 +292,9 @@
                     <option>Últimos productos</option>
                 </select>
                 <div class="flex gap-2 ml-auto">
+                    <div class="border border-secundary w-10 h-9 flex items-center justify-center text-secundary rounded cursor-pointer md:hidden">
+                        <i class="fas fa-filter"></i>
+                    </div>
                     <div class="border border-primary w-10 h-9 flex items-center justify-center text-white bg-primary rounded cursor-pointer">
                         <i class="fas fa-th"></i>
                     </div>
@@ -302,7 +305,7 @@
             </div>
             <!--sorting end-->
             <!--Product grid-->
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-6 grid-cols-2">
             <!--Single product-->
             <div class="bg-white shadow rounded overflow-hidden">
               <!--Product image-->
