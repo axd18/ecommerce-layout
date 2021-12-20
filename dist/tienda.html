@@ -161,7 +161,7 @@
     <!--Shop wrapper-->
     <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
         <!--sidebar-->
-        <div class="md:flex hidden col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+        <div id="sidebar" class="md:flex hidden md:col-span-1 col-span-4 bg-white px-4 pb-6 shadow rounded overflow-hidden">
             <div class="divide-y divide-gray-300 space-y-5">
                 <!--category filter-->
                 <div>
@@ -275,7 +275,9 @@
                     </div>
                 </div>
                 <!--color filter end-->
-
+                <div class="mt-8">
+                    <a href="#" class="block md:hidden w-full text-center bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">Aplicar</a>
+                </div>
 
             </div>
         </div>
@@ -292,8 +294,8 @@
                     <option>Últimos productos</option>
                 </select>
                 <div class="flex gap-2 ml-auto">
-                    <div class="border border-secundary w-10 h-9 flex items-center justify-center text-secundary rounded cursor-pointer md:hidden">
-                        <i class="fas fa-filter"></i>
+                    <div  class="border border-secundary w-10 h-9 flex items-center justify-center text-secundary rounded cursor-pointer md:hidden">
+                        <i id="open_sidebar" class="fas fa-filter"></i>
                     </div>
                     <div class="border border-primary w-10 h-9 flex items-center justify-center text-white bg-primary rounded cursor-pointer">
                         <i class="fas fa-th"></i>
@@ -491,11 +493,11 @@
         <!--Copyright end-->
         
         <script>
-            document.getElementById('dropdown').addEventListener('click', function(){
-                document.getElementById('dropdown_content').classList.toggle('hidden')
+            document.getElementById('open_sidebar').addEventListener('click', function(){
+                document.getElementById('sidebar').classList.toggle('hidden')
             });
             document.getElementById('close').addEventListener('click', function(){
-                document.getElementById('dropdown_content').classList.toggle('hidden')
+                document.getElementById('sidebar').classList.toggle('hidden')
             })
         </script>
 </body>
